@@ -4,9 +4,9 @@ import type { User } from '@/domain/entities/User';
 
 @injectable()
 export class UserApiRepository implements IUserRepository {
-    private readonly baseUrl = '/api/users';
+  private readonly baseUrl = '/api/users';
 
-    async getAll(): Promise<User[]> {
-        return [];
-    }
+  async getAll(): Promise<User[]> {
+    return [];
+  }
 }

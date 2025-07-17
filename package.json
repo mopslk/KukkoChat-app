@@ -9,21 +9,43 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "tauri": "tauri"
+    "tauri": "tauri",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.{js,ts,vue}": [
+      "eslint --fix --quiet",
+      "nuxt typecheck ."
+    ],
+    "*.{scss,vue}": "stylelint --fix"
   },
   "dependencies": {
-    "vue": "^3.5.17",
-    "vue-router": "^4.5.1",
     "@pinia/nuxt": "^0.11.1",
+    "@tauri-apps/api": "^2",
+    "@tauri-apps/plugin-opener": "^2",
     "nuxt": "^3.17.7",
     "pinia": "^3.0.3",
     "reflect-metadata": "^0.2.2",
     "tsyringe": "^4.10.0",
-    "@tauri-apps/api": "^2",
-    "@tauri-apps/plugin-opener": "^2"
+    "vue": "^3.5.17",
+    "vue-router": "^4.5.1"
   },
   "devDependencies": {
-    "vue-tsc": "^3.0.1",
-    "@tauri-apps/cli": "^2"
+    "@nuxtjs/eslint-config-typescript": "^12.1.0",
+    "@nuxtjs/eslint-module": "^4.1.0",
+    "@nuxtjs/stylelint-module": "^5.2.1",
+    "@tauri-apps/cli": "^2",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "eslint": "^8.57.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^18.0.0",
+    "eslint-plugin-vue": "^9.24.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.2",
+    "stylelint": "^16.21.1",
+    "stylelint-config-recommended-scss": "^15.0.1",
+    "stylelint-config-recommended-vue": "^1.6.1",
+    "vue-tsc": "^3.0.1"
   }
 }

@@ -1,5 +1,5 @@
-import type { User } from "@/domain/entities/User";
+import type { User } from '@/domain/entities/User';
 
 export interface IUserService {
-    fetchUsers(): Promise<User[]>;
+  fetchUsers(): Promise<User[]>;
 }

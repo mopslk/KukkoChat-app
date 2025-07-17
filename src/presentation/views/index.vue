@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useUserVM } from "@/presentation/viewmodels/useUserVM";
+import { useUserVM } from '@/presentation/viewmodels/useUserVM';
 
 const userVM = useUserVM();
 
@@ -9,7 +9,7 @@ onMounted(() => {
 </script>
 
 <template>
-<div>
-  index
-</div>
+  <div>
+    index
+  </div>
 </template>
